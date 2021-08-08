@@ -6,7 +6,7 @@
   --accent-bg-color: #f5f4fa;
   --buttons-bg-color: #2196f3;
   --second-bg-color: #2f303a;
-  --border-color:#afb1b8;
+  --border-color: #afb1b8;
 
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
@@ -38,6 +38,7 @@ ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  box-sizing: border-box;
 }
 
 .list {
@@ -67,22 +68,22 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
 .logo-web-footer {
+  display: block;
   color: var(--accent-text-color);
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-top: 0;
   margin-right: 93px;
   margin-bottom: 20px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-right: 0;
 }
 
@@ -98,11 +99,9 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.section-data {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .site-contact .link {
@@ -177,15 +176,11 @@ ul {
 }
 
 .feature-list {
-  width: 270px;
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-left: 0;
   margin-right: 0;
-  
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feature-list .item:not(:last-child) {
@@ -198,8 +193,6 @@ ul {
   height: 12px;
   fill: currentColor;
   vertical-align: middle;
-  
-  
 }
 
 .icon-smartphone {
@@ -214,17 +207,12 @@ ul {
   margin-right: 10px;
 }
 
-
 .contacts-icon {
   color: #afb1b8;
 }
 
 .contacts-icon:hover {
   color: var(--buttons-bg-color);
-}
-
-.section-work {
-  padding-bottom: 94px;
 }
 
 .what-we-do {
@@ -234,9 +222,6 @@ ul {
 .what-we-do .item-list + .item-list {
   margin-left: 30px;
 }
-
-
-
 
 .site-nav .link.current {
   color: var(--accent-text-color);
@@ -251,6 +236,8 @@ ul {
   max-width: 1600px;
   height: 600px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -350,17 +337,24 @@ ul {
   background-color: var(--accent-text-color);
   color: var(--second-accent-text-color);
 }
-.portfolio-buttons-list .ibutton:not(:last-child) {
-  margin-right: 8px;
+
+.ibutton:hover,
+.ibutton:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .portfolio-buttons-list {
   list-style: none;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-top: 94px;
   margin-bottom: 50px;
+}
+
+.ibutton:not(:last-child) {
+  margin-right: 8px;
 }
 
 .item-icon {
@@ -395,8 +389,13 @@ ul {
   letter-spacing: 0.03em;
   margin: 0 0 50px;
 }
+
+.section-work {
+  padding-bottom: 94px;
+  padding-top: 0;
+}
 .clients-link {
- fill: var(--border-color);
+  fill: var(--border-color);
   width: 170px;
   height: 92px;
   border: 1px solid var(--border-color);
@@ -409,22 +408,20 @@ ul {
   cursor: pointer;
 }
 
-.clients-link:hover { 
-  fill: var(--buttons-bg-color) ;
+.clients-link:hover {
+  fill: var(--buttons-bg-color);
   border: 1px solid var(--buttons-bg-color);
-  }
-   
- 
+}
 
 .feature-list .title {
   color: var(--title-text-color);
 }
 .team-container {
   background-color: var(--accent-bg-color);
-  margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-item {
   background-color: var(--second-accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -434,7 +431,7 @@ ul {
 .team-info {
   display: block;
   text-align: center;
-  padding-top: 30px;
+  color: var(--title-text-color);
   padding-bottom: 10px;
 }
 
@@ -449,15 +446,6 @@ ul {
   margin-right: 30px;
 }
 
-.team-name {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .team-work {
   font-size: 16px;
   line-height: 1.19;
@@ -467,11 +455,7 @@ ul {
   text-align: center;
   margin: 0;
 }
-.team-worker {
-  display: block;
-  text-align: center;
-  padding-bottom: 30px;
-}
+
 .team-socials {
   list-style: none;
   display: flex;
@@ -480,7 +464,7 @@ ul {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .socials-link {
@@ -500,9 +484,6 @@ ul {
 .icon-linkedin {
   width: 22px;
   height: 22px;
-}
-.clients-title {
-  margin-bottom: 50px;
 }
 
 .socials-link:hover,
@@ -615,29 +596,28 @@ ul {
   margin-right: 10px;
 }
 .footer-title {
+  display: block;
   color: var(--second-accent-text-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
 }
 
 .footer-socials {
   list-style: none;
   cursor: pointer;
   padding: 0;
-  margin: 0;
   margin-left: 70px;
 }
 
 .footer-socials-item {
   display: flex;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
+  margin-right: 0;
 }
 
 .footer-social-link {
@@ -691,21 +671,20 @@ img {
   padding: 0;
   margin: 0;
   margin-left: -30px;
-  margin-top: -50px;
-  margin-bottom: 30px;
+  margin-top: -30px;
 }
 
-.portfolio-part {
-  width: 370px;
-  border: 1px solid #eeeeee;
+.portfolio-type > .portfolio-part {
   box-sizing: border-box;
   margin-left: 30px;
-  margin-top: 50px;
-  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .card-info {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .address:hover,
@@ -715,12 +694,12 @@ img {
   color: var(--accent-text-color);
 }
 .portofolio-buttons {
-  padding-top: 94px;
-  padding-bottom: 50px;
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .visually-hidden {
@@ -733,6 +712,18 @@ img {
 }
 .portfolio-link {
   width: 370px;
-  height: 404px;
+  /*height: 404px;*/
   text-decoration: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.portfolio-part:hover,
+.portfolio-part:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
