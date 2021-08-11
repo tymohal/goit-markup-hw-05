@@ -82,8 +82,6 @@ ul {
   margin-top: 0;
   margin-right: 93px;
   margin-bottom: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   padding-right: 0;
 }
 
@@ -428,6 +426,7 @@ ul {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+  transition: all;
 }
 
 .ibutton:not(:last-child) {
@@ -599,6 +598,11 @@ ul {
   margin-right: 30px;
 }
 
+.team-name{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .team-work {
   font-size: 16px;
   line-height: 1.19;
@@ -606,7 +610,8 @@ ul {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
   text-align: center;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .team-socials {
@@ -755,7 +760,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 0px;
   padding: 0;
 }
 
@@ -764,6 +769,7 @@ ul {
   cursor: pointer;
   padding: 0;
   margin-left: 70px;
+  margin-top: 20px;
 }
 
 .footer-socials-item {
