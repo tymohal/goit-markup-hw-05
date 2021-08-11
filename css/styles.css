@@ -172,7 +172,7 @@ ul {
   height: 4px;
   background-color: var(--accent-text-color);
   border-radius: 2px;
-  bottom: -7px;
+  bottom: -1px;
 }
 
 .auth-nav-item:not(:last-child) {
