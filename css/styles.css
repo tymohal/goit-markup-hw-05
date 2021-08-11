@@ -264,7 +264,7 @@ ul {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero.jpg);
+    url(../images/hero.jpg);
 
   outline: 1px solid black;
 }
@@ -464,8 +464,8 @@ ul {
 }
 
 .hidden-info {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   font-size: 18px;
@@ -573,8 +573,6 @@ ul {
 }
 .team-container {
   background-color: var(--accent-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -866,15 +864,11 @@ img {
   margin-top: 0;
 }
 .portfolio-link {
-  width: 370px;
-  /*height: 404px;*/
-  text-decoration: none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-link {
-  text-decoration: none;
   position: relative;
+  width: 370px;
+  text-decoration: none;
+  /*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);*/
 }
 
 .portfolio-part:hover,
